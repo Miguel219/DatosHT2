@@ -49,7 +49,7 @@ public class StackImp implements Stack<String>{
 	@Override
 	public boolean empty() {
 		// TODO Auto-generated method stub
-		if(!vector.isEmpty()) {
+		if(vector.isEmpty()) {
 			return true;
 		}else {			
 			return false;
