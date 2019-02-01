@@ -59,8 +59,8 @@ public class MainController {
 						//Si no es int es un operando entonces ya se puede efectuar la operacion
 						//Se sacan la operacion y los dos operandos
 						String operacion = value;
-						int operando1 = stack.pop();
 						int operando2 = stack.pop();
+						int operando1 = stack.pop();
 						//Se hace la operacion
 						int resultado = calculator.Calculate(operando1, operando2, operacion);
 						//Se guarda el resultado en la primera posicion del stack

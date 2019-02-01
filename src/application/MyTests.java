@@ -26,7 +26,7 @@ public class MyTests {
         int suma=calculadora.Calculate(num1,num2 , "+");
         int resta=calculadora.Calculate(num1,num2 , "-");
         int multiplicacion=calculadora.Calculate(num1,num2 , "*");
-        int division=(int)(calculadora.Calculate(num2,num1 , "/"));
+        int division=(int)(calculadora.Calculate(num1,num2 , "/"));
         assertEquals(15, suma, "Se debe verificar que el resultado de la suma sea 15 y que funcione");
         assertEquals(5, resta, "Se debe verificar que el resultado de la resta sea 5 y que funcione");
         assertEquals(2, division, "Se debe verificar que el resultado de la division sea 2 y que funcione");
