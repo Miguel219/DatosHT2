@@ -4,8 +4,14 @@ import java.util.Vector;
 
 public class StackImp implements Stack<String>{
 	
+	/**
+	 * Vector que almacena los operandos y operaciones
+	 */
 	private Vector<String> vector;
 	
+	/**
+	 * Constructor
+	 */
 	public StackImp() {
 		// TODO Auto-generated constructor stub
 		vector = new Vector<String>();

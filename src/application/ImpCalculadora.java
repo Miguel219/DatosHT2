@@ -9,7 +9,7 @@ public class ImpCalculadora implements Calculator {
 	@Override
 	public int Calculate(int num1, int num2, String op) {
 		int ans = 0;
-			
+		
 		if (op.equals("+")) {
 		ans = num1 + num2;	
 		}

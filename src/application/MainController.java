@@ -18,10 +18,22 @@ public class MainController {
 	@FXML
 	private Label result;
 	
+	/**
+	 * Objeto de la clase que implementa Stack 
+	 */
 	private StackImp stack;
+	/**
+	 * objeto de la clase que implementa Calculator
+	 */
 	private ImpCalculadora calculator;
+	/**
+	 * Es en donde se almacena la informacion leida en el archivo txt
+	 */
 	private Scanner s;
 	
+	/**
+	 *	lee el archivo txt 
+	 */
 	public void read() {
 		//Si ya se verifico y no hay error se lee el archivo
 		if(verifyPath()) {
@@ -57,6 +69,10 @@ public class MainController {
 		}
 	}
 	
+	/**
+	 * Verifica que el path sea correcto 
+	 * @return boolean = si se pudo abrir el path
+	 */
 	public boolean verifyPath() {
 		try {
 			//Se lee el archivo
