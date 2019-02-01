@@ -28,8 +28,8 @@ public class ImpCalculadora implements Calculator {
 		if (op.equals("/")) {
 		
 			if (num2 != 0) {
-			ans = num1 / num2;
-			
+				float an = (num2 / num1);
+				ans = (int)an;
 			} else {
 				System.out.println("error: Division por 0.");
 			}
