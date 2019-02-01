@@ -2,32 +2,32 @@ package application;
 
 import java.util.Vector;
 
-public class StackImp implements Stack<String>{
+public class StackImp implements Stack<Integer>{
 	
 	/**
 	 * Vector que almacena los operandos y operaciones
 	 */
-	private Vector<String> vector;
+	private Vector<Integer> vector;
 	
 	/**
 	 * Constructor
 	 */
 	public StackImp() {
 		// TODO Auto-generated constructor stub
-		vector = new Vector<String>();
+		vector = new Vector<Integer>();
 	}
 
 	@Override
-	public void push(String item) {
+	public void push(Integer item) {
 		// TODO Auto-generated method stub
 		vector.add(item);
 	}
 
 	@Override
-	public String pop() {
+	public Integer pop() {
 		// TODO Auto-generated method stub
 		if(!vector.isEmpty()) {
-			String lastElement = vector.lastElement();
+			Integer lastElement = vector.lastElement();
 			vector.remove(vector.size()-1);
 			return lastElement;
 		}else {			
@@ -36,10 +36,10 @@ public class StackImp implements Stack<String>{
 	}
 
 	@Override
-	public String peek() {
+	public Integer peek() {
 		// TODO Auto-generated method stub
 		if(!vector.isEmpty()) {
-			String lastElement = vector.lastElement();
+			Integer lastElement = vector.lastElement();
 			return lastElement;
 		}else {			
 			return null;
