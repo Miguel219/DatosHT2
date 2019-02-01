@@ -24,11 +24,11 @@ public class MainController {
 	/**
 	 * Objeto de la clase que implementa Stack 
 	 */
-	private StackImp stack;
+	private Stack<Integer> stack;
 	/**
 	 * objeto de la clase que implementa Calculator
 	 */
-	private ImpCalculadora calculator;
+	private Calculator calculator;
 	/**
 	 * Es en donde se almacena la informacion leida en el archivo txt
 	 */
