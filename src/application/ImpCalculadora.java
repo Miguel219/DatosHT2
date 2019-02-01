@@ -1,9 +1,6 @@
+package application;
 
-import java.io.*;
-
-
-
-public class ImpCalculadora implements Calculadora {
+public class ImpCalculadora implements Calculator {
 	
 	
 	public ImpCalculadora() {}

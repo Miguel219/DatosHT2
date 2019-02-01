@@ -8,6 +8,7 @@ public class StackImp implements Stack<String>{
 	
 	public StackImp() {
 		// TODO Auto-generated constructor stub
+		vector = new Vector<String>();
 	}
 
 	@Override
