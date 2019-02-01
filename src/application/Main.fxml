@@ -2,9 +2,11 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
 <?import javafx.scene.text.Font?>
 
 <BorderPane prefHeight="325.0" prefWidth="511.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
@@ -23,11 +25,16 @@
                      <font>
                         <Font size="14.0" />
                      </font></Button>
-                  <Label fx:id="result" layoutX="79.0" layoutY="190.0" prefHeight="20.0" prefWidth="162.0" text="Resultado:" textFill="#161df8">
+                  <Label fx:id="result" layoutX="79.0" layoutY="190.0" prefHeight="35.0" prefWidth="127.0" text="Resultados:" textFill="#161df8">
                      <font>
                         <Font size="24.0" />
                      </font>
                   </Label>
+                  <ScrollPane hbarPolicy="NEVER" layoutX="218.0" layoutY="190.0" prefHeight="111.0" prefWidth="249.0">
+                     <content>
+                        <FlowPane fx:id="resultFlowPane" prefHeight="200.0" prefWidth="250.0" />
+                     </content>
+                  </ScrollPane>
                </children>
             </AnchorPane>
          </center>

@@ -16,7 +16,7 @@ public class ImpCalculadora implements Calculator {
 		
 		
 		if (op.equals("-")) {
-			ans = num2 - num1;
+			ans = num1 - num2;
 		}
 		
 		
